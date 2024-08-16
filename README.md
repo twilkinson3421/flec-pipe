@@ -33,7 +33,7 @@ const result = pipe(-16, Math.abs, Math.sqrt);
 
 ## Pipize
 
-Flec Pipe also provides a functio called `pipize`. This function allows you to mutate an exisiting function, with parameters, to make it suitable for piping. You can also specify the index of the parameter which the piped value should fill. Here's an example of how to use it.
+Flec Pipe also provides a function called `pipize`. This function allows you to mutate an exisiting function, with parameters, to make it suitable for piping. You can also specify the index of the parameter which the piped value should fill. Here's an example of how to use it.
 
 ```ts
 import { pipe, pipize } from "flec-pipe";

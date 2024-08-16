@@ -27,7 +27,7 @@
     "url": "https://github.com/twilkinson3421"
   },
   "license": "MIT",
-  "description": "",
+  "description": "Brings support for piping to JavaScript, with full TypeScript integration. Use it to write clean, readable, and maintainable JavaScript.",
   "devDependencies": {
     "@types/node": "^22.3.0"
   },

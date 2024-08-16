@@ -1,0 +1,37 @@
+{
+  "name": "flec-pipe",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "/dist"
+  ],
+  "homepage": "https://github.com/twilkinson3421/flec-pipe#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twilkinson3421/flec-pipe.git"
+  },
+  "keywords": [
+    "flec",
+    "pipe",
+    "elixir",
+    "functional",
+    "operator"
+  ],
+  "author": {
+    "name": "Thomas Wilkinson",
+    "url": "https://github.com/twilkinson3421"
+  },
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.3.0"
+  },
+  "dependencies": {
+    "tartak": "^0.3.1"
+  }
+}

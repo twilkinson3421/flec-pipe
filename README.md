@@ -31,6 +31,8 @@ const result = pipe(-16, Math.abs, Math.sqrt);
 // result = 4
 ```
 
+The `pipe` function supports **up to 40 functions** (_in addition to the initial value - thus 41 arguments in total_).
+
 ## Pipize
 
 Flec Pipe also provides a function called `pipize`. This function allows you to mutate an exisiting function, with parameters, to make it suitable for piping. You can also specify the index of the parameter which the piped value should fill. Here's an example of how to use it.
@@ -67,7 +69,7 @@ In the first example, the piped value takes the place of the first parameter (se
 
 In the second example, the piped value takes the place of the second parameter (see the `1` in the array). This causes the piped value to be passed as the second parameter to the `divide` function.
 
-The following arguments of the `pipize` function represent the other parameters of the function to be made pipable, in order (excluding the parameter which the piped value should fill).
+The following arguments of the `pipize` function represent the other parameters of the function to be made pipable, in order (excluding the parameter which the piped value should fill), and fully typed.
 
 This can be useful for piping values to JavaScript functions which take multiple parameters. For example:
 
@@ -105,11 +107,3 @@ const result = pipe(
 // result = 3 ** 4
 // = 81
 ```
-
-## TypeScript Support
-
-Both the `pipe` and `pipize` functions are fully typed. The `pipe` function supports **up to 29 functions**. If you need more, you can do one of the following:
-
-- Use multiple nested `pipe` calls like in traditional JavaScript.
-- Pass a `pipe` function as a function within another `pipe` function call. This has not been tested, and TypeScript may complain about excessive complexity.
-- See the [source code](https://github.com/twilkinson3421/flec-pipe/blob/master/tools/write_pipe.ts) for a file which will generate the `pipe` function's type declaration given a specifified maximum number of functions, and create your own type for the `pipe` function. Alternatively, you can also simply extend the existing `pipe_type.ts` file in your `node_modules` directory.

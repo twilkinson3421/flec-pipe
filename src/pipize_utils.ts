@@ -1,5 +1,5 @@
 import type { IsPositive } from "tartak/math";
-import type { DropNth } from "./array_utils";
+import type { DropNth } from "./array_utils.ts";
 
 /**
  * Get the remaining arguments to the pipized function, in the correct order

@@ -1,5 +1,5 @@
 import type { Head, Last } from "tartak/prelude";
-import type { DropLast, Penultimate } from "./array_utils";
+import type { DropLast, Penultimate } from "./array_utils.ts";
 
 type PipeFunction<I, R> = (input: I) => R;
 

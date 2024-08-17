@@ -1,4 +1,4 @@
-import type { Params } from "./pipe_utils";
+import type { Params } from "./pipe_utils.ts";
 
 export interface Pipe {
 	<A>(...args:Params<[A]>):A;

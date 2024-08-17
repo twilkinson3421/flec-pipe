@@ -1,5 +1,5 @@
-import type { Pipe } from "./pipe_type";
-import type { ArgsInOrder } from "./pipize_utils";
+import type { Pipe } from "./pipe_type.ts";
+import type { ArgsInOrder } from "./pipize_utils.ts";
 
 /**
  * Pass the value of a function to the next function in the pipe, and return the result of the last function in the pipe.
